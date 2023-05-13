@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import Canciones from './componentes/canciones/canciones';
+import Eventos from './componentes/eventos/eventos';
 function App() {
+  const [activeTab, SetActiiveTab] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        {activeTab === 0 ?
+          <>
+            <input type='button' value="Canciones" onClick={() => SetActiiveTab(1)} />
+            <input type='button' value="Eventos" onClick={() => SetActiiveTab(2)} />
+          </>
+          :
+          <>
+            <input type='button' value="volver" onClick={() => SetActiiveTab(0)} />
+          </>
+        }
+      </div>
+      {activeTab === 1 && <Canciones />}
+      {activeTab === 2 && <Canciones />}
     </div>
   );
 }
