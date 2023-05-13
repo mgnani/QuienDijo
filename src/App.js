@@ -3,11 +3,13 @@ import './App.css';
 import { useState } from 'react';
 import Canciones from './componentes/canciones/canciones';
 import Eventos from './componentes/eventos/eventos';
+import img from './img/quien_dijo.png'
 function App() {
   const [activeTab, SetActiiveTab] = useState(0);
   return (
     <div className="App">
       <div>
+        <img src={img}/>
         {activeTab === 0 ?
           <>
             <input type='button' value="Canciones" onClick={() => SetActiiveTab(1)} />
