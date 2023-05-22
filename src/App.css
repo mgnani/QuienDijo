@@ -35,3 +35,20 @@
     margin: auto;
     margin-bottom: 10px;
 }
+.top img{
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+    margin: 0 0;
+}
+.buttonvolver input{
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
