@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import Canciones from './componentes/canciones/canciones';
@@ -9,12 +8,12 @@ function App() {
   return (
     <div className="App">
       <div>
-        <img src={img}/>
+        <img src={img}alt="logoportada"className="logoportada"/>
         {activeTab === 0 ?
-          <>
-            <input type='button' value="Canciones" onClick={() => SetActiiveTab(1)} />
-            <input type='button' value="Eventos" onClick={() => SetActiiveTab(2)} />
-          </>
+          <div className="buttons">
+            <input className="buttoneventos" type='button' value="Canciones" onClick={() => SetActiiveTab(1)}/>
+            <input className='buttoneventos' type='button' value="Eventos" onClick={() => SetActiiveTab(2)} />
+          </div>
           :
           <>
             <input type='button' value="volver" onClick={() => SetActiiveTab(0)} />
