@@ -15,4 +15,23 @@
 }
 .App {
     background-color: #050505;
+    height: 100vh;
+    overflow: hidden;
+}
+.logoportada {
+    max-width: 100vw;
+    min-width: 300px;
+    width: 30vw;
+    display: block;
+    margin: 0 auto;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.buttoneventos{
+    margin: auto;
+    margin-bottom: 10px;
 }
