@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <img src={img}alt="logoportada"className="logoportada"/>
+      <img src={img} alt="logoportada" className={`logoportada ${activeTab !== 0 ? 'top' : ''}`} />
         {activeTab === 0 ?
           <div className="buttons">
             <input className="buttoneventos" type='button' value="Canciones" onClick={() => SetActiiveTab(1)}/>
