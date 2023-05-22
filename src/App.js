@@ -7,17 +7,17 @@ function App() {
   const [activeTab, SetActiiveTab] = useState(0);
   return (
     <div className="App">
-      <div>
-      <img src={img} alt="logoportada" className={`logoportada ${activeTab !== 0 ? 'top' : ''}`} />
+      <div  className={`contenedor ${activeTab !== 0 ? 'top' : ''}`}>
+      <img src={img} alt="logoportada" className="logoportada" />
         {activeTab === 0 ?
           <div className="buttons">
             <input className="buttoneventos" type='button' value="Canciones" onClick={() => SetActiiveTab(1)}/>
             <input className='buttoneventos' type='button' value="Eventos" onClick={() => SetActiiveTab(2)} />
           </div>
           :
-          <>
+          <div className="buttonvolver">
             <input type='button' value="volver" onClick={() => SetActiiveTab(0)} />
-          </>
+          </div>
         }
       </div>
       {activeTab === 1 && <Canciones />}
