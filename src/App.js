@@ -1,6 +1,6 @@
-import './App.css';
+import './App.scss';
 import { useState } from 'react';
-import Canciones from './componentes/canciones/canciones';
+import Canciones from './componentes/canciones/canciones/canciones';
 import Eventos from './componentes/eventos/eventos';
 import img from './img/quien_dijo.png'
 function App() {
