@@ -1,7 +1,9 @@
+
 *{
     padding: 0;
     margin: 0;
     font-family: Sora, sans-serif;
+    transition: .5 all ease-in-out;
 }
 .App input{
     padding: 10px 30px;
@@ -11,11 +13,11 @@
     border-radius: 7px;
     border: 1px solid gray;
     box-shadow: 5px 5px 10px gray;
-
+    min-width: 150px;
 }
 .App {
     background-color: #080808;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 .logoportada {
@@ -38,10 +40,15 @@
 .top{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    align-items: center;
+    padding: 10px;
+    input{
+        height: 37px;
+    }
     img{
-       width: 70px;
-       height: 70px;
+       width: 37px;
+       padding: 8px 30px;
+       height: 37px;
        margin: 0;
        display: inline;
     }
