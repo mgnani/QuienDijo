@@ -13,12 +13,9 @@ function Cancion({ nombre, letra, acordes }) {
 
   return (
     <div className="cancion" onClick={handleClick}>
-       <div className="card flex justify-content-center">
-            <InputSwitch checked={checked} onChange={(e) => setChecked(e.value)} />
-        </div>
+
       <div className="cancion_text" >
-        
-        <h2>{nombre}</h2>
+        - {nombre}
       </div>
       {show && <pre>{letra}</pre>}
     </div>

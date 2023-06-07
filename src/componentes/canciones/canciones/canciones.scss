@@ -1,22 +1,39 @@
 .canciones_contenedor{
     display: flex;
     align-items: center;
-    width: 100%;
     padding: 20px 0;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #111;
+    padding: 0 15px;
     min-height: calc(100vh - 100px);
     .lista_canciones{
-        color: black;
+        background-color: #262626;
+        color: white;
         padding: 40px;
         margin: 40px 0;
-        width: 700px;
-        max-width: 90vw;
-        border-radius: 8px;
+        border-radius: 4px;
         display: flex;
         align-items: center;
         flex-direction:    column;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 100%;
+        .title{
+            width: 100%;
+            text-align: left;
+            h3{
+                font-size: 1.75rem;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size:12px; 
+                color:#ffc107;
+                margin-bottom: 16px;
+                font-weight: 500;
+            }
+        }
     }
     
 }

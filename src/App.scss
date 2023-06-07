@@ -1,22 +1,23 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Sono:wght@300;400&display=swap');
 *{
     padding: 0;
     margin: 0;
-    font-family: Sora, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     transition: .5 all ease-in-out;
 }
 .App input{
     padding: 10px 30px;
     height: 55px;
-    background-color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.61);
     font-size: 17px;
-    border-radius: 7px;
+    border-radius: 4px;
     border: 1px solid gray;
-    box-shadow: 5px 5px 10px gray;
     min-width: 150px;
+    color: white;
 }
 .App {
-    background-color: #080808;
+    background-color: #191919;
     min-height: 100vh;
     overflow: hidden;
 }
