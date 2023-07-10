@@ -439,6 +439,9 @@ function Canciones() {
 
   Estrofa c
   Cmaj7 D  Cmaj7 D C
+
+  Estribo
+  Bm C D BM C Am d
   `,
   acordes: "No disponible"
 },
@@ -448,8 +451,22 @@ function Canciones() {
   acordes: "No disponible"
 },
 {
-  nombre: "Soy mi soberano",
+  nombre: "Estoy bien",
   letra: "No disponible",
+  acordes: "No disponible"
+},
+{
+  nombre: "A las 9",
+  letra: `
+  Estrofa
+  D Am Em D
+
+  Estibo
+  Em G D C Em D 
+
+  Puente
+  F# G F# G Gm
+  `,
   acordes: "No disponible"
 },
 {
@@ -458,9 +475,7 @@ function Canciones() {
   G-C-G-D- Em-C-D 
   C- Cm7 -G-D
   
-  
-  
-  
+
   em-Bm-C-G-Eb-F-G-D
   Estribo 
   G-C-D x2 
@@ -469,7 +484,10 @@ function Canciones() {
 },
 {
   nombre: "11 y 6",
-  letra: "No disponible",
+  letra: `G  Am/F# B7  
+  Em Em/D Em/C#
+  Cm G/B Am/ C/D
+  `,
   acordes: "No disponible"
 },
 {
@@ -613,7 +631,7 @@ function Canciones() {
   acordes: "No disponible"
 },
 {
-  nombre: "Después de ver",
+  nombre: "Tito",
   letra: "No disponible",
   acordes: "No disponible"
 },
